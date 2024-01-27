@@ -1,0 +1,52 @@
+.contect {
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20rem;
+  align-items: center;
+}
+.contect__description {
+  font-size: var(--font-size-20);
+  line-height: 1.9;
+}
+.contect__email {
+  font-weight: var(--font-weight-bold);
+  margin: 2.5rem 0;
+}
+.contect__social {
+  transition: var(--transition-timing);
+}
+.contect__social:hover {
+  transform: scale(1.2);
+}
+.contect__inputs {
+  display: flex;
+  gap: 3rem;
+}
+.contect__input {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  flex: 1;
+  border-bottom: 0.1rem solid var(--color-input-border);
+}
+.contect__textarea {
+  width: 100%;
+  margin-top: 4rem;
+}
+.contect__buttom {
+  color: var(--color-white);
+  background-color: var(--color-link-bg);
+  padding: 1.7rem 1.8rem;
+  font-size: var(--font-size-24);
+  font-weight: var(--font-weight-medium);
+  margin-top: 3.4rem;
+  cursor: pointer;
+  transition: var(--transition-timing);
+}
+.contect__buttom:hover {
+  transform: scale(1.03);
+}
+form:invalid::after {
+  content: "*";
+  font-size: var(--font-size-40);
+  color: var(--color-red);
+}
